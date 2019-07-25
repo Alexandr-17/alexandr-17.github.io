@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>Alexandr Ivanov | Front-end разработчик</title>
+    <meta name="keywords" content="frontend, web, developer, фронтенд, веб, разработчик, портфолио">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Alexandr Ivanov"/>
+    <meta property="og:description" content="Верстка сайтов, front-end разработка."/>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://alexandr-17.github.io/"/>
+ 
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+
+</head>
+
+<body>
+
+<header class="page-header">
+    <div class="page-header__inner">
+        <nav class="main-nav">
+            <ul class="main-nav__list">
+                <li class="main-nav__item">
+                    <a class="main-nav__item-link" href="#features" id="nav1" data-nav="1">Навыки</a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__item-link" href="#portfolio" id="nav2" data-nav="2">Портфолио</a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__item-link" href="#about" id="nav3" data-nav="3">Обо мне</a>
+                </li>
+                <li class="main-nav__item">
+                    <a class="main-nav__item-link" href="#" id="contact">Связаться</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+<main>
+    <section class="intro" id="intro">
+        <div class="intro__content">
+            <h1 class="intro__title">Александр Иванов</h1>
+            <h2 class="intro__text">HTML/CSS</h2>
+            <h2 class="intro__text">&</h2>
+            <h2 class="intro__text">Java Script</h2>
+            
+            <p class="intro__descr  intro__descr--right"><span class="intro__descr--highlight">Внимательность,</span> аккуратность.</p>
+            <div class="intro__contact">
+                <span class="intro__locate">Москва</span>
+                <a class="intro__email" href="mailto:apivanov17@mail.ru">apivanov17@mail.ru</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="features" id="features">
+        <div class="features__content">
+            <div class="features__skills">
+                <h3 class="features__title">Навыки</h3>
+                <div class="features__items-wrap">
+                    <div class="features__item ">
+                        <h4 class="features__text">HTML</h4>
+                    </div>
+                    <div class="features__item" id="scene">
+                        <h4 class="features__text">CSS</h4>
+                    </div>
+                    <div class="features__item">
+                        <h4 class="features__text">Bootstrap</h4>
+                    </div>
+                    <div class="features__item">
+                        <h4 class="features__text">React JS</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="portfolio  portfolio--no-js" id="portfolio">
+        <div class="portfolio__content">
+            <h3 class="portfolio__title">Портфолио</h3>
+            <div class="slider  slider--no-js">
+                <div class="slider__items-wrap">
+                    <div class="slider__items  slider__items--no-js">
+                        <article class="portfolio-item  slider__item  slider__item--no-js">
+                            <h5 class="portfolio-item__title">Lenoma</h5>
+                            <div class="portfolio-item__img-wrap">
+                                <img class="portfolio-item__img  slider__big-col" src="img/content/mockup__lenoma__540x312.png" alt="Lenoma.ru">
+                            </div>
+                            <div class="portfolio-item__details  portfolio-item__small-col">
+                                <p class="portfolio-item__text">HTML5, CSS3</p>
+                                <a class="portfolio-item__btn" href="portfolio/lenoma/index.html" target="_blank">Смотреть</a>
+                            </div>
+                        </article>
+
+                        <article class="portfolio-item  slider__item  slider__item--no-js">
+                            <h5 class="portfolio-item__title">Barbershop</h5>
+                            <div class="portfolio-item__img-wrap">
+                                <img class="portfolio-item__img  portfolio-item__big-col" src="img/content/mockup__barbershop--left__540x312.png" alt="Barbershop Borodinski">
+                            </div>
+                            <div class="portfolio-item__details  slider__small-col">
+                                <p class="portfolio-item__text">Фиксированная верстка, спрайты, HTML5, CSS3, Javascript</p>
+                                <a class="portfolio-item__btn" href="portfolio/barbershop/index.html" target="_blank">Смотреть</a>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about" id="about">
+        <div class="about__content">
+            <h3 class="about__title">Обо мне</h3>
+            <div class="about__inner">
+              <p class="about__text">Совершенствую свои навыки. Стремлюсь создавать читабельные, понятные, соответствующие всем параметрам сайты </p>
+              <p class="about__text">Уверенно использую HTML5 и CSS3, а также имею базовые знания Javascript и продолжаю активно изучать. </p>
+              <p class="about__text">Знаком с основными аспектами тестирования и оптимизации верстки.</p>
+              <p class="about__text">Имеющиеся знания получил благодаря <a class="about__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy.</a></p>
+    </section>
+</main>
+
+</body>
+
+</html>
