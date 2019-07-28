@@ -1,131 +1,166 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<!DOCTYPE html>
+<html>
 <head>
+    <title>Александр Иванов</title>
     <meta charset="utf-8">
-    <title>Alexandr Ivanov | Front-end разработчик</title>
-    <meta name="keywords" content="frontend, web, developer, фронтенд, веб, разработчик, портфолио">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Alexandr Ivanov"/>
-    <meta property="og:description" content="Верстка сайтов, front-end разработка."/>
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://alexandr-17.github.io/"/>
- 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        new WOW().init();
+    </script>
 
-</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50" style="margin: 0">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top d-flex justify-content-center">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#skills">Навыки</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Портфолио</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">Обо мне</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contacts">Контакты</a>
+            </li>
+        </ul>
+    </nav>
 
-<body>
+    <div id="skills" class="container-fluid bg-succes" style="padding-top: 70px; padding-bottom: 70px;">
+        <div class="col">
+            <div class="col-12 d-flex justify-content-center" style="padding-top: 40px;">
+                <h3>HTML ВЕРСТАЛЬЩИК<br>
+                    &<br>
+                    Junior Frontend Разработчик</h3>
+            </div>
 
-<header class="page-header">
-    <div class="page-header__inner">
-        <nav class="main-nav">
-            <ul class="main-nav__list">
-                <li class="main-nav__item">
-                    <a class="main-nav__item-link" href="#features" id="nav1" data-nav="1">Навыки</a>
-                </li>
-                <li class="main-nav__item">
-                    <a class="main-nav__item-link" href="#portfolio" id="nav2" data-nav="2">Портфолио</a>
-                </li>
-                <li class="main-nav__item">
-                    <a class="main-nav__item-link" href="#about" id="nav3" data-nav="3">Обо мне</a>
-                </li>
-                <li class="main-nav__item">
-                    <a class="main-nav__item-link" href="#" id="contact">Связаться</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
+            <div class="row d-flex justify-content-center" style="padding-top: 30px;">
+            <div class="col-4">
+            <h3>HTML5</h3>
+            </div>
+            <div class="col-4 d-flex justify-content-end" style="padding-top: 30px;">
+            <h3>CSS3</h3>
+            </div>
+            </div>
 
-
-<main>
-    <section class="intro" id="intro">
-        <div class="intro__content">
-            <h1 class="intro__title">Александр Иванов</h1>
-            <h2 class="intro__text">HTML/CSS</h2>
-            <h2 class="intro__text">&</h2>
-            <h2 class="intro__text">Java Script</h2>
+            <div class="row justify-content-around" style="padding-top: 30px;">
+            <div class="col-4">
+            <h3>Bootstrap</h3>
+            </div>
+            <div class="col-4 d-flex justify-content-end" style="padding-top: 30px;">
+            <h3>JS</h3>
+            </div>
+            </div>
             
-            <p class="intro__descr  intro__descr--right"><span class="intro__descr--highlight">Внимательность,</span> аккуратность.</p>
-            <div class="intro__contact">
-                <span class="intro__locate">Москва</span>
-                <a class="intro__email" href="mailto:apivanov17@mail.ru">apivanov17@mail.ru</a>
+            <div class="row justify-content-between" style="padding-top: 20px;">
+            <div class="col-4">
+                <h3>ReactJS</h3>
+            </div>
+            <div class="col-4 d-flex justify-content-end">
+                <h3>Sass</h3>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="portfolio" class="col" style="padding-top: 70px; padding-bottom: 70px; background-color: #941b1b;">
+        <div class="row d-flex justify-content-center">
+            <h2>Примеры работ</h2>
+        </div>
+        <div class="row" style="padding-top: 70px;">
+        <div class="col-sm-6">
+        <div class="card bg-dark text-white">
+            <img class="card-img" src="./img/content/barbershop-index.png" style="opacity: 0.1">
+            <div class="card-img-overlay">
+            <h5 class="card-title">Баребршоп Бородинский</h5>
+            <p class="card-text">Фиксированная верстка, спрайты, HTML5, CSS3, Javascript.</p>
+            <a href="portfolio/barbershop/index.html" class="btn btn-primary">Посмотреть</a>
             </div>
         </div>
-    </section>
-
-
-    <section class="features" id="features">
-        <div class="features__content">
-            <div class="features__skills">
-                <h3 class="features__title">Навыки</h3>
-                <div class="features__items-wrap">
-                    <div class="features__item ">
-                        <h4 class="features__text">HTML</h4>
-                    </div>
-                    <div class="features__item" id="scene">
-                        <h4 class="features__text">CSS</h4>
-                    </div>
-                    <div class="features__item">
-                        <h4 class="features__text">Bootstrap</h4>
-                    </div>
-                    <div class="features__item">
-                        <h4 class="features__text">React JS</h4>
-                    </div>
-                </div>
+        </div>
+        <div class="col-sm-6">
+        <div class="card bg-dark text-white">
+            <img class="card-img" src="./img/content/barbershop-index.png" style="opacity: 0.1">
+            <div class="card-img-overlay">
+            <h5 class="card-title">Баребршоп Бородинский</h5>
+            <p class="card-text">Фиксированная верстка, спрайты, HTML5, CSS3, Javascript.</p>
+            <a href="portfolio/barbershop/index.html" class="btn btn-primary">Посмотреть</a>
             </div>
         </div>
-    </section>
-
-
-    <section class="portfolio  portfolio--no-js" id="portfolio">
-        <div class="portfolio__content">
-            <h3 class="portfolio__title">Портфолио</h3>
-            <div class="slider  slider--no-js">
-                <div class="slider__items-wrap">
-                    <div class="slider__items  slider__items--no-js">
-                        <article class="portfolio-item  slider__item  slider__item--no-js">
-                            <h5 class="portfolio-item__title">Lenoma</h5>
-                            <div class="portfolio-item__img-wrap">
-                                <img class="portfolio-item__img  slider__big-col" src="img/content/mockup__lenoma__540x312.png" alt="Lenoma.ru">
-                            </div>
-                            <div class="portfolio-item__details  portfolio-item__small-col">
-                                <p class="portfolio-item__text">HTML5, CSS3</p>
-                                <a class="portfolio-item__btn" href="portfolio/lenoma/index.html" target="_blank">Смотреть</a>
-                            </div>
-                        </article>
-
-                        <article class="portfolio-item  slider__item  slider__item--no-js">
-                            <h5 class="portfolio-item__title">Barbershop</h5>
-                            <div class="portfolio-item__img-wrap">
-                                <img class="portfolio-item__img  portfolio-item__big-col" src="img/content/mockup__barbershop--left__540x312.png" alt="Barbershop Borodinski">
-                            </div>
-                            <div class="portfolio-item__details  slider__small-col">
-                                <p class="portfolio-item__text">Фиксированная верстка, спрайты, HTML5, CSS3, Javascript</p>
-                                <a class="portfolio-item__btn" href="portfolio/barbershop/index.html" target="_blank">Смотреть</a>
-                            </div>
-                        </article>
-
-                    </div>
-                </div>
+        </div>
+        </div>
+        <div class="row" style="padding-top: 70px;">
+        <div class="col-sm-6">
+        <div class="card bg-dark text-white">
+            <img class="card-img" src="./img/content/barbershop-index.png" style="opacity: 0.1">
+            <div class="card-img-overlay">
+            <h5 class="card-title">Баребршоп Бородинский</h5>
+            <p class="card-text">Фиксированная верстка, спрайты, HTML5, CSS3, Javascript.</p>
+            <a href="portfolio/barbershop/index.html" class="btn btn-primary">Посмотреть</a>
             </div>
         </div>
-    </section>
+        </div>
+        <div class="col-sm-6">
+        <div class="card bg-dark text-white">
+            <img class="card-img" src="./img/content/barbershop-index.png" style="opacity: 0.1">
+            <div class="card-img-overlay">
+            <h5 class="card-title">Баребршоп Бородинский</h5>
+            <p class="card-text">Фиксированная верстка, спрайты, HTML5, CSS3, Javascript.</p>
+            <a href="portfolio/barbershop/index.html" class="btn btn-primary">Посмотреть</a>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
 
+    <div id="about" class="container-fluid bg-succes" style="padding-top: 70px; padding-bottom: 70px; padding-left: 30px; background-color: #2c941c; color: #242424">
+        <h2>Меня зовут Александр</h2>
+        <h4>Родился и вырос в активно развивающемся мегаполисе - Москва!<br>
+            Когда мне было около 10 лет, меня заинтересовали информационные технологии<br>
+            и с этого момента я начал изучать данную область.<br>
+            Первым шагом и знакомством с ИТ-отраслью стали курсы ФизТехКолледжа при МАТИ.<br>
+            Отзанимавшись несколько лет я сменил приоритет на поступление в ВУЗ.<br>
+            Сдав ЕГЭ, поступил в МГУПС МИИТ на специализацию Технолог-машиностроения.<br>
+            Во время обучения больше всего привлекали дисциплины,<br>
+            связанные с CAD/CAM системами, а также с написанием программ для станков с ЧПУ.<br>
+            В 2014 году окончил ведущий транспортный университет России и<br>
+            с 2014 по 2019 год проходил военную службу по контракту.<br>
+            За этот период женился, воспитываю сына)<br>
+            В 2016 году принял решение продолжить образовательную деятельность.<br>
+            Успешно пройдя отбор в Международный Юридический Институт (бывш. Юридический Институт Министерства Юстиций РФ)<br>
+            Мной была выбрана тема магистерской диссертации: "Гражданско-правовые основы стабильности государства в эпоху цифровой экономики"
+            В 2019 году успешно защитился.<br><br>
+            В настоящее время обучаюсь по курсам <a href="http://www.htmlacademy.ru" target="blank" style="text-decoration: none; color: #242424;">HTML ACADEMY</a>, а так-же чтению спецификаций на английском языке.<br>
 
-    <section class="about" id="about">
-        <div class="about__content">
-            <h3 class="about__title">Обо мне</h3>
-            <div class="about__inner">
-              <p class="about__text">Совершенствую свои навыки. Стремлюсь создавать читабельные, понятные, соответствующие всем параметрам сайты </p>
-              <p class="about__text">Уверенно использую HTML5 и CSS3, а также имею базовые знания Javascript и продолжаю активно изучать. </p>
-              <p class="about__text">Знаком с основными аспектами тестирования и оптимизации верстки.</p>
-              <p class="about__text">Имеющиеся знания получил благодаря <a class="about__link" href="https://htmlacademy.ru/" target="_blank">HTML Academy.</a></p>
-    </section>
-</main>
+        </h4>
+    </div>
+    <div id="contacts" class="container-fluid bg-succes d-flex justify-content-center" style="padding-top: 70px; padding-bottom: 70px; background-color: #121212;">
+        <div class="row">
+            <div class="col-sm-2">
+            <a href="https://www.t-do.ru/Alexandr_Alexandr" target="blank"><img src="./img/tg.png" width="40px"; height="40px;"></a>
+            </div>
+            <div class="col-sm-2">
+            <a href="https://wa.me/79253353103?text=Я%20заинтересовался%20Вашей%вакансией" target="blank"><img src="./img/wa.png" width="40px"; height="40px;"></a>
+            </div>
+            <div class="col-sm-2">
+            <a href="tel:79253353103" target="blank"><img src="./img/ph.png" width="40px"; height="40px;"></a>
+            </div>
+            <div class="col-sm-2">
+            <a href="https:/facebook.com/alexandr.ivanov.9440234" target="blank"><img src="./img/fb.png" width="40px"; height="40px;"></a>
+            </div>
+            <div class="col-sm-2">
+            <a href="https://vk.com/id263176571" target="blank"><img src="./img/vk.png" width="40px"; height="40px;"></a>
+            </div>
+            <div class="col-sm-2">
+            <a href="https://github.com/Alexandr-17" target="blank"><img src="./img/git.png" width="40px"; height="40px;"></a>
+            </div>
 
+        </div>
+    </div>
 </body>
-
 </html>
+
