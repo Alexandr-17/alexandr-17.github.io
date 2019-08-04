@@ -1,12 +1,25 @@
 <?php
+ 	$mysqli = new Mysqli('localhost', 'root', '', 'mybase')
+
 	$name = $_POST['name'];
 	$email = $_POST['email'];
-	$phone = $_POST['phone'];
 	$message = $_POST['message'];
 
-	$subject = "?utf-8?B?" base64_encode("Сообщение")."?=";
-	$headers = "From: $email\r\nReply-to: $email\r\nContent-type: text/html; charset=utf-8\r\n\";
+	if ($name && $email && $message) {
+		$query = $mysqli->query("INSERT INTO 'users' VALUES(NULL, '$name', '$email', '$message')");
 
-	$success = mail("apivanov17@mail.ru", $subject, $message, $headers);
-	echo $success;
+		$query2 = $mysqli->query("SELECT * FROM 'users' ORDER BY 'id' DESC");
+
+		while($row = $query2->fetch_assoc()) {
+			$users['id'] [] = $row['id'];
+			$users['name'] [] = $row['name'];
+			$users['email'] [] = $row['email'];
+			$users['message'] [] = $row['message'];
+		}
+
+	$out = array (
+		'users' => $users);
+	header('Content-Type: text/json; charset=utf-8');
+
+	echo json-encode($out);
 ?>
