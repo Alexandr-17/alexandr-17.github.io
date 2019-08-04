@@ -28,7 +28,7 @@ $("#sendMail").on("click", function () {
 		dataType: 'html',
 		beforeSend: function() {
 			$("#ErrorMess").prop("disable", true);
-		}
+		},
 		success: function(data) {
 			if(!data)
 				alert("Сообщение не отправлено");
@@ -36,5 +36,4 @@ $("#sendMail").on("click", function () {
 				$("mailform").trigger("reset");
 			$("#ErrorMess").prop("disable", false);
 		}
-	}); 
 });
