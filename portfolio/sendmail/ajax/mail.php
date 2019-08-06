@@ -1,25 +1,14 @@
 <?php
- 	$mysqli = new Mysqli('localhost', 'root', '', 'mybase')
+ 	$mysqli = new mysqli("localhost", "root", "", "mybase")
 
-	$name = $_POST['name'];
-	$email = $_POST['email'];
-	$message = $_POST['message'];
 
-	if ($name && $email && $message) {
-		$query = $mysqli->query("INSERT INTO 'users' VALUES(NULL, '$name', '$email', '$message')");
+	$result = mysqli_query("SELECT id * FROM `users`");
+		while($row = mysqli_fetch_array($result)) {
+			$id = $row['id'];
+			$name = $row['name'];
+			$email = $row['email'];
+			$message = $row['message'];
 
-		$query2 = $mysqli->query("SELECT * FROM 'users' ORDER BY 'id' DESC");
-
-		while($row = $query2->fetch_assoc()) {
-			$users['id'] [] = $row['id'];
-			$users['name'] [] = $row['name'];
-			$users['email'] [] = $row['email'];
-			$users['message'] [] = $row['message'];
-		}
-
-	$out = array (
-		'users' => $users);
-	header('Content-Type: text/json; charset=utf-8');
-
-	echo json-encode($out);
+			echo $id.")&nbsp; &nbsp;" .$name.$email.$message."<br/><hr>";
+	}
 ?>

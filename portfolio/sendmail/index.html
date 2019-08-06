@@ -5,23 +5,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<title>Обратная связь</title>
+	<title>Alexandr Ivanov</title>
 </head>
 <body>
+	<!-- Создал форму, прописал id для трансляции информация далее -->
 	<div class="container">
-		<h1>Обратная связь</h1>
-		<form id="Form">
-			<input type="text" id="name" name="name" placeholder="Ваше имя" class="form-control"><br>
-			<input type="email" id="email" name="email" placeholder="Ваш email" class="form-control"><br>
-			<textarea name="message" id="message" placeholder="Ваше сообщение" class="form-control"></textarea><br>
-			<button type="button" id="sendMail" class="btn btn-success">Отправить</button>
+		<h1>ReCallBack Form</h1>
+		<form id="myForm">
+			<input type="text" id="name" name="name" placeholder="Alexandr Ivanov" class="form-control"><br>
+			<input type="email" id="email" name="email" placeholder="apivanov17@mail.ru" class="form-control"><br>
+			<textarea name="mess" id="mess" placeholder="Your message, min 5 symbol" class="form-control"></textarea><br>
+			<button type="button" id="sendMail" class="btn btn-success">Submit</button>
 		</form>
 		<div id="ErrorMess"></div>
 	</div>
-	<table class="Review">
+
+	<!-- Создал таблицу для вывода сюда списка -->
+	<table class="rows">
 
 	</table>
+	<!-- Подключил библиотеку ajax и свой js -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="js/mail.js"></script>
+<script src="js/mail2.js"></script>
 </body>
 </html>
